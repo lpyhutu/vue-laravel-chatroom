@@ -1,0 +1,20 @@
+input {
+    // border    : $border-one !important;
+    background: $bg-one !important;
+}
+
+.header button {
+    background : $bg-one !important;
+    margin-left: 5px !important;
+}
+
+textarea {
+    border    : none !important;
+    height    : 80px !important;
+    color     : $font-color-one !important;
+    background: rgba(255, 0, 0, 0) !important;
+}
+
+.v-modal {
+    z-index: -1 !important;
+}

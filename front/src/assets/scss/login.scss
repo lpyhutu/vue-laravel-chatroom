@@ -1,0 +1,65 @@
+.login {
+    display    : flex;
+    flex-flow  : column;
+    align-items: center;
+    width      : 250px;
+
+    h1 {
+        margin   : 15px 0;
+        font-size: 32px;
+    }
+
+    .ipt {
+        margin    : 5px 0;
+        text-align: center;
+    }
+
+    .verification {
+        display    : flex;
+        align-items: center;
+
+        >.ipt {
+            margin-right: 5px;
+        }
+
+        button {
+            margin-bottom: 5px;
+            width        : 50%;
+            height       : 40px;
+            font-size    : $font-size-two;
+            font-weight  : normal;
+        }
+
+        img {
+            cursor: pointer;
+        }
+    }
+
+    button {
+        margin-top : 5px;
+        width      : 100%;
+        font-size  : $font-size-four;
+        font-weight: bold;
+        color      : $font-color-two;
+
+        &:hover {
+            background-color: $hover-bg-btn;
+        }
+    }
+
+    .tip {
+        display        : flex;
+        flex-flow      : row;
+        justify-content: space-between;
+        padding        : 10px;
+        width          : 100%;
+
+        span:last-child {
+            cursor: pointer;
+        }
+
+        a {
+            color: $bg-one;
+        }
+    }
+}

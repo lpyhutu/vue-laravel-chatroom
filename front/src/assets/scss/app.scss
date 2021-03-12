@@ -1,0 +1,39 @@
+$font-size-one  :12px;
+$font-size-two  :14px;
+$font-size-three:16px;
+$font-size-four :18px;
+$font-size-five :20px;
+
+$border-one: 1px solid rgba(255, 255, 255, 0.4);
+
+$bg-one : rgba(255, 255, 255, 0.7);
+$bg-two : rgba(255, 255, 255, 0.3);
+
+$bg-theme : rgba(255, 255, 255, 0.2);
+$bg-white :#ffffff;
+
+$font-color-one   : rgba(255, 255, 255, 0.7);
+$font-color-two   :#404040;
+$font-color-three :#999999;
+$font-color-four  :#adadad;
+
+$hover-bg-btn :#cacaca;
+
+.app-line-clamp {
+    display           : -webkit-box;
+    overflow          : hidden;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+// @mixin border($opacity) {
+//     border: 1px solid rgba(255, 255, 255, $opacity) !important;
+// }
+
+// @mixin bg-white($opacity) {
+//     background: rgba(255, 255, 255, $opacity) !important;
+// }
+
+// @mixin font-color-white($opacity) {
+//     color: rgba(255, 255, 255, $opacity) !important;
+// }

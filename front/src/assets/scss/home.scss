@@ -1,0 +1,185 @@
+.home {
+    display   : flex;
+    flex-flow : row;
+    height    : 550px;
+    width     : 1000px;
+    background: $bg-theme;
+    border    : $border-one;
+
+    >.left {
+        display        : flex;
+        flex-flow      : column;
+        justify-content: space-between;
+        align-items    : center;
+        width          : 60px;
+        padding        : 20px 0;
+        background     : $font-color-two;
+
+        i {
+            font-size: $font-size-five;
+        }
+
+        >.top {
+            width: 100%;
+
+            div {
+                width : 100%;
+                height: 70px;
+            }
+
+            .avatar {
+                >img {
+                    width        : 65%;
+                    border-radius: 3px;
+                }
+            }
+
+            .active {
+                color: $bg-white;
+            }
+        }
+
+        .left-comment {
+            display        : flex;
+            align-items    : center;
+            justify-content: center;
+            cursor         : pointer;
+            width          : 100%;
+            height         : 70px;
+            color          : $font-color-three;
+
+            &:hover {
+                color: $bg-white;
+            }
+        }
+    }
+
+    >.center {
+        display     : flex;
+        flex-flow   : column;
+        width       : 250px;
+        border-right: $border-one;
+
+        >.header {
+            display        : flex;
+            align-items    : center;
+            justify-content: center;
+            min-height     : 60px;
+            padding        : 0 10px;
+            background     : $bg-theme;
+
+        }
+
+        >.content {
+            overflow: auto;
+        }
+    }
+
+    >.right {
+        display  : flex;
+        flex-flow: column;
+        flex     : 1;
+
+        >.header {
+            display        : flex;
+            flex-flow      : column;
+            justify-content: center;
+            min-height     : 60px;
+            background     : $bg-two;
+            font-size      : $font-size-four;
+            padding-left   : 10px;
+        }
+
+        >.content {
+            overflow: auto;
+            flex    : 1;
+            padding : 10px 20px;
+
+            >.list {
+                display      : flex;
+                margin-bottom: 20px;
+
+                >.avatar {
+
+                    img {
+                        width        : 35px;
+                        height       : 35px;
+                        border-radius: 2px;
+                    }
+                }
+
+                >.left {
+                    flex        : 1;
+                    padding-left: 10px;
+
+                    >.top {
+                        display        : flex;
+                        justify-content: space-between;
+                        align-items    : center;
+
+                        .name {
+                            font-size: $font-size-one;
+                            color    : $font-color-four;
+                        }
+
+                        .time {
+                            font-size: $font-size-one;
+                            color    : $font-color-four;
+                        }
+                    }
+
+                    >.text {
+
+                        >div {
+                            margin-top: 5px;
+                            padding   : 5px;
+                        }
+                    }
+                }
+            }
+        }
+
+        >.comment {
+            display   : flex;
+            flex-flow : column;
+            height    : 150px;
+            background: $bg-two;
+
+            .nav {
+                display    : flex;
+                align-items: center;
+                height     : 30px;
+                padding    : 0 15px;
+
+                i {
+                    cursor   : pointer;
+                    padding  : 5px;
+                    font-size: $font-size-five;
+                }
+            }
+
+            .text {
+                flex      : 1;
+                // padding: 0 5px;
+            }
+
+            .btn {
+                display        : flex;
+                padding        : 5px 15px;
+                justify-content: flex-end;
+            }
+        }
+    }
+
+    .search-email {
+        display        : flex;
+        justify-content: space-between;
+        padding        : 15px;
+    }
+
+    .dialog-tip {
+        p {
+            padding: 5px 0;
+        }
+    }
+}

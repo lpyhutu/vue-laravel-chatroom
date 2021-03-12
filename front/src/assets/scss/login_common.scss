@@ -1,0 +1,10 @@
+input {
+    border    : $border-one !important;
+    background: $bg-theme !important;
+    color     : $bg-one !important;
+
+    &:focus {
+        background: $bg-white !important;
+        color     : $font-color-two !important;
+    }
+}
